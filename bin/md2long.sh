@@ -82,8 +82,6 @@ function echo_if_verbose() {
 if [[ -z "$OUTFILE" ]]; then
   echo "No --output argument given."
   exit 1
-else
-  OUTFILE="$(realpath "$OUTFILE")"
 fi
 
 # Prompt for confirmation if ${OUTFILE} exists.
